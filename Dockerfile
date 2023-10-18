@@ -5,4 +5,15 @@ WORKDIR /workspace
 #    pip3 config set global.index-url https://mirrors.aliyun.com/pypi/simple
 RUN pip3 install --user -i https://mirrors.aliyun.com/pypi/simple opencv-python==3.4.5.20
 
+RUN sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
+RUN apt-get update -qqy && \
+    apt-get install -qqy --no-install-recommends \
+        libsm6 \
+        libxrender1 \
+        libxext6 && \
+    apt-get clean -qqy && \
+    rm -rf /var/cache/apt
+
+RUN python3 setup.py install
+
 COPY . .
