@@ -31,3 +31,4 @@
 # Folders
 build/
 *~
+.idea
