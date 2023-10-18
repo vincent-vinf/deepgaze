@@ -14,6 +14,6 @@ RUN apt-get update -qqy && \
     apt-get clean -qqy && \
     rm -rf /var/cache/apt
 
-RUN python3 setup.py install
-
 COPY . .
+
+RUN python3 setup.py install
