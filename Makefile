@@ -7,3 +7,6 @@ docker-build:
 
 docker-push:
 	docker push ${IMG}
+
+build-arm:
+	docker build --platform=linux/arm64 -t ${IMG} .

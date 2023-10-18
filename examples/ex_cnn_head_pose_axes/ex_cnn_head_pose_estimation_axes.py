@@ -1,17 +1,5 @@
 #!/usr/bin/env python
 
-#The MIT License (MIT)
-#Copyright (c) 2016 Massimiliano Patacchiola
-#
-#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF 
-#MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY 
-#CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
-#SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-#In this example the Deepgaze CNN head pose estimator is used to get the YAW angle.
-#The angle is projected on the input images and showed on-screen as a red line.
-#The images are then saved in the same folder of the script.
-
 import numpy as np
 import os
 import tensorflow as tf

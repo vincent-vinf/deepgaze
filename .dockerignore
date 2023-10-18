@@ -1,3 +1,9 @@
 .gitignore
 venv
 .idea
+doc
+tests
+examples
+README.md
+Dockerfile
+uploads
