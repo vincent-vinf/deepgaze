@@ -58,9 +58,9 @@ def upload_file():
     roll, pitch, yaw = head_pose(save_path)
 
     return jsonify({'filename': filename,
-                    "roll": roll,
-                    "pitch": pitch,
-                    "yaw": yaw
+                    "roll": float(roll),
+                    "pitch": float(pitch),
+                    "yaw": float(yaw)
                     }), 200
 
 
